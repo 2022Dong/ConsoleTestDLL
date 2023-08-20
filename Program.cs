@@ -23,8 +23,9 @@ namespace ConsoleTestDLL
                 try
                 {
                     int option = int.Parse(Console.ReadLine());
-
-                    switch (option)
+                    try
+                    {
+                        switch (option)
                     {
                         case 1:
                             // Input
@@ -69,6 +70,8 @@ namespace ConsoleTestDLL
                             Console.WriteLine("More options are coming... ");
                             break;
                     }
+                    }
+                    catch { Console.WriteLine("*** Please entry a double value ***"); }
                 }
                 catch { Console.WriteLine("*** Please type (1 ~ 5) ***"); }
             }
