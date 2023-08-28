@@ -61,8 +61,9 @@ namespace ConsoleTestDLL
                                 double massBase = double.Parse(Console.ReadLine());
                                 Console.WriteLine("Blackhole Mass Exponent:");
                                 double massExponent = double.Parse(Console.ReadLine());
+                                double blackHoleMass = massBase * Math.Pow(10, massExponent);
                                 // Output
-                                double schwarzschildRadius = calculate.BlackholeEventHorizon(massBase, massExponent);
+                                double schwarzschildRadius = calculate.BlackholeEventHorizon(blackHoleMass);
                                 Console.WriteLine($"SchwarzschildRadius Value: {schwarzschildRadius: 0.##E+00}"); // ** "string.Format()" VS string interpolation "$".
                                 break;
                             case 5:
