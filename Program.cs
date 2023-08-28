@@ -44,7 +44,8 @@ namespace ConsoleTestDLL
                                 double arcsecondsAngle = double.Parse(Console.ReadLine());
                                 // Output
                                 double parsecs = calculate.StarDistance(arcsecondsAngle);
-                                Console.WriteLine($"Parsecs Value: {Math.Round(parsecs, 4)}");
+                                Console.WriteLine($"Parsecs Value: {parsecs}");
+                                //Console.WriteLine($"Parsecs Value: {Math.Round(parsecs, 4)}");
                                 break;
                             case 3:
                                 //Input
